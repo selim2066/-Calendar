@@ -1,0 +1,157 @@
+.container{
+border: 2px solid green;
+display: flex;
+height: 200px;
+justify-content: center;
+justify-content: space-around;
+align-items: center;
+font-size: 2rem;
+flex-direction: row-reverse;
+background-color: antiquewhite;
+}
+.box{
+    height: 50px;
+    width: 150px;
+    border: dashed gold;
+    text-align: center;
+    background-color: brown;
+    color: aliceblue;
+    
+}
+#box-3:hover{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(2, 141, 42);
+    transform: rotate(-360deg);
+    transition: width 2s , height .51s, transform 2s;
+    border-radius: 50%;
+    
+}
+#box-2:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(141, 2, 132);
+    transform: rotate(360deg);
+    transition: width 2s , height 1s, transform 2s;
+    border-radius: 50%;
+}
+hr{
+    border: dotted blueviolet 6px;
+    border-top: none;
+    width: 6%;
+    margin: 50px auto;
+}
+
+
+/*********callender********/
+
+
+.calendar{
+    display: grid;
+     
+    grid-template-columns: repeat(7, 1fr);
+    
+    row-gap: 30px;
+    column-gap: 70px;
+    border: 5px solid yellow;
+    padding: 20px;
+}
+
+.date {
+    color:aliceblue;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(241, 3, 3);
+height: 60px;
+width: 120px;
+border-radius: 10px;
+}
+.date:hover{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    color: green;
+    transform: rotate(360deg);
+    transition: width 2s , height 2s, transform 2s;
+   
+}
+.day{
+    color:rgb(210, 223, 205);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(2, 150, 19);
+height: 50px;
+width: 90px;
+border-radius: 10px;
+}
+.otherMonth{
+    background-color: lightgray;
+    color: rgb(136, 125, 125);
+}
+.otherMonth:hover{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: red;
+    transform: rotate(360deg);
+    transition: width 2s , height 2s, transform 2s;
+}
+
+/******animation******/
+
+ .headanimation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+ }
+.ground{
+    width: 500px;
+    height: 100px;
+    background-color: rgb(3, 3, 3);
+    border-radius: 5px ;
+     
+}
+.head{
+    width: 500px;
+    height: 100px;
+    background-color: rgb(3, 191, 19);
+    border-radius: 5px ;
+}
+.ball{
+    height: 40px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    animation: sliding 2s ease-in-out 0.5s infinite  alternate;
+    animation-play-state: running;
+    position: relative;
+    color: whitesmoke;
+    font-family: 'Sacramento', cursive;
+    font-size: x-large;
+}
+
+@keyframes sliding {
+    0%{
+       background-color:rgb(219, 176, 4); 
+       left: 10px;
+       top:5px
+ }
+    
+    100%{
+        background-color:  rgb(250, 6, 6);
+   left: 361px; 
+     top:1px  
+
+    }
+}
